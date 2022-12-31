@@ -12,7 +12,7 @@ Linux and Mac version can be installed by the command line<br/>
 The Windows version should be added to the user variables path after placing the downloaded folder in a safe location<br/>
 Download Python from [here](https://www.python.org/downloads/)<br/>
 While installing Python on windows remember to click the check box to add to path<br/>
-After installing FFmpeg and Python download the 8mbCompressor file from this git hub repository to any location<br/>
+After installing FFmpeg and Python download the FFmpeg8mbCompressor file from this git hub repository to any location<br/>
 Click on the .py file 'compressorGUI.py' and select the file you wish to compress<br/>
 After selecting the finished file will appear in a folder labled 'Finished Compressed Files'<br/>
 
