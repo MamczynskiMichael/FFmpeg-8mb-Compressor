@@ -5,7 +5,6 @@ from tkinter.messagebox import showinfo
 from tkinter import font
 import compressor
 import os
-import random
 
 root = tk.Tk()
 root.title('File Compressor')
@@ -29,18 +28,20 @@ def select_file():
         ('png files', '*.png')
     )
 
-    filename = fd.askopenfilename(
+    filename = fd.askopenfilenames(
         title = 'Open a file',
         initialdir = '/',
         filetypes = filetypes
         )
     if filename:
-        fileExtension = filename.split('.')[-1]
-        print(os.getcwd())
-        print(filename)
-        randNum = random.randrange(0, 1000)
+        for fileLocation in filename:
+            file = os.path.basename(fileLocation)
+            fileTitle = file.split('.')
+            fileEnd = fileTitle[-1]
+            fileTitle = fileTitle[0]
+            compressor.compress_video(fileLocation,f'{path}\{fileTitle}_%03d.{fileEnd}', fileCompressSize *1000 , fileEnd)
             
-        compressor.compress_video(filename,f'{path}\compressed_{randNum}.{fileExtension}', fileCompressSize *1000 , fileExtension)
+
         message = 'Successful Compression'
     else:
         message = 'No File Selected'

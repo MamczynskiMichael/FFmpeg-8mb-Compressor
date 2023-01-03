@@ -1,5 +1,6 @@
 import os
 import ffmpeg
+
 def compress_video(video_full_path, output_file_name, target_size, file_extension):
     if file_extension != 'png' and file_extension != 'jpg':
         # Reference: https://en.wikipedia.org/wiki/Bit_rate#Encoding_bit_rate
