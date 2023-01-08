@@ -2,7 +2,7 @@
 This project combines TKinter and FFmpeg so that a user can easily compress multiple files down to 8mb for use with discord <br/>
 Files that have been tested are as follows: MP4, M4V, MOV, JPG, PNG <br/>
 Other types of video files may work but have not been tested<br/>
-The software allows you to compress multiple files down to 8mb or 50mb. As PNGs are lossless the program attempts its best to compress the file<br/>
+The software allows you to compress multiple files down to 8mb or 50mb. If files are less than 8mb they will be compressed as best as possible. As PNGs are lossless the program attempts its best to compress the file<br/>
 All of the code is written in Python<br/>
 
 ## How To Use <br/>
